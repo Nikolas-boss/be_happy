@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Валидация</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.6/jquery.inputmask.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Валидация</h1>
+
+        <form action="thx.html" class="form" id="add-form">
+            <div class="input-box">
+                <input data-required="true" type="text" class="input-field" placeholder="Имя">
+            </div>
+            <div class="input-box">
+                <input data-max-length="1" type="text" class="input-field email-input" placeholder="Email">
+            </div>    
+            <div class="input-box">
+                <input data-min-length="5" type="tel" id="phone" class="phone-mask" placeholder="Номер телефона">
+            </div>
+            <button type="submit" class="send-btn">Отправить</button>
+        </form>
+    </div>
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <script defer src="js/index.js"></script>
+</body>
+
+</html>
+
+
